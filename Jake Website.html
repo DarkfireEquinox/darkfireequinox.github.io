@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Jake's Portfolio</title>
+		<link rel="stylesheet" href="link.css"> 
+		
+	</head>
+	<body>
+		<nav> 
+			<ul>
+				<li><a href="#aboutme">About Me</a></li>
+				<li><a href="Jake Ahlstrom Resume.docx" target='_blank' title="My Resume">My Resume</a></li>
+				<li><a href="#courses">Courses</a></li>
+				<li><a href="#Projects">Projects</a></li>
+				<li><a href="https://www.linkedin.com/feed/">Linkedin</a></li>
+			</ul>
+		</nav>
+				<svg xmlns="http://www.w3.org/2000/svg" >
+ 		 	<g>
+    			<rect x="0" y="0" width="200" height="75" fill="red"></rect>
+   			 	<text x="0" y="50" font-family="Verdana" font-size="35" fill="silver">About Me</text>
+  			</g>
+		</svg>
+		<video width="320" height="240" controls>
+  			<source src="I need sleep.mp4" type="video/mp4">
+   			</video>
+		<div id="aboutme">
+		<canvas id="myCanvas" width="375" height="500"
+				style="border:10px solid #d3d3d3;">
+		<script>
+				 var canvas = document.getElementById('myCanvas');
+     			 var context = canvas.getContext('2d');
+     			 var imageObj = new Image();
+
+     			 imageObj.onload = function() {
+       			 context.drawImage(imageObj, 0, 0);
+     			 };
+     			 imageObj.src = 'https://media.discordapp.net/attachments/354428492785647618/370413158755598336/image.jpg?width=374&height=499';
+		</script>
+					<p>My name is Jake Ahlstrom. I am a 20 year old software engineering student at Florida Gulf Coast University who is looking to become a robotics enginneer. I enjoy coming up with new ways to solve problems, as well as embracing my inner nerd in the form of gaming, cosplay, and makingt he occasional Youtube video. </p>
+		</div>
+		<div id="Projects">	
+		<h1>My Projects</h1>
+			<nav>
+				<ol>
+					<li><a href="https://scratch.mit.edu/projects/172548873/">Bats</a></li>
+					<li><a href="https://scratch.mit.edu/projects/175816787/">Lightsaber Fight</a></li>
+				</ol>
+			</nav>
+		</div>
+		<div id="courses">
+			<h1> Courses</h1>
+				<p>Here are a few of the courses I have taken, or am currently taking, that you may be interested in.
+				<nav>
+					<ul>
+						<li>Effective Learning</li>
+						<li>Intro to Computer Science</li>
+						<li>General Phsychology</li>
+						<li>Intro Philosophy</li>
+						<li>Calculus II</li>
+					</ul>
+				</nav>
+			</div>
+			<audio controls>
+   				<source src="Jhin_The_Virtuoso_-_Champion_select_quote[Mp3Converter.net].mp3" type="audio/mpeg">
+   				<source src="Jhin_The_Virtuoso_-_Champion_select_quote[Mp3Converter.net].wav" type="audio/wav">
+   			</audio>
+   			<p><a href="field report.docx" target='_blank' 
+				title="Click here to open a Word document">
+				Click here to see my Fields Report</a></p>
+	</body>
+</html>
